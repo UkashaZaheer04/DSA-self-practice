@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
 //  insert element at first index 
- int n;
+ /* int n;
  cout<<"Enter size of array : ";
  cin>>n;
  int arr[n];
@@ -25,5 +25,27 @@ int main()
    for (int i=0;i<n;i++)
    {
     cout<<arr[i];
-   }
+   } */
+//  insertion at last index   
+  int n;
+ cout<<"Enter size of array : ";
+ cin>>n;
+
+ int arr[n+1];
+ for (int i=0;i<n;i++)
+ {
+    cout<<"Enter elements in array :";
+    cin>>arr[i];
+ }
+  int x;
+  cout<<"Enter the element you want to add in last  index :";
+  cin>>x;
+  arr[n]=x;
+    cout<<"The update array is ";
+  for(int i=0;i<n+1;i++)
+  {
+    
+     cout<<arr[i];
+  }
+
 }
