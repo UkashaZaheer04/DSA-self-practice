@@ -1,20 +1,18 @@
-
 #include <iostream>
 using namespace std;
 int main()
 {
-    /* // Method 1:
-    
-     // Accessing elements of the array
-    int arr[4]={1,2,3,4};
-    cout<<arr[3];
-    
+    // Method 1:
+    // Accessing elements of the array
+    int arr[4] = {1, 2, 3, 4};
+    cout << arr[3];
+
     //    Method 2 :
-      int arr[]={1,2,3,4,5};
-     cout<<arr[4];
-     
+    int arr[] = {1, 2, 3, 4, 5};
+    cout << arr[4];
+
     //  Method 3 :
-    // Taking input from user 
+    // Taking input from user
     int n;
     cout << "Enter the number of elements in the array: ";
     cin >> n;
@@ -24,18 +22,17 @@ int main()
         cin >> arr[i];
     }
     // Garbage Value :
-     int arr[4] = {1, 2, 3};
-     for(int i = 0; i < 4; i++) {
-         cout << arr[i] << " ";
-     }  */
+    int arr[4] = {1, 2, 3};
+    for (int i = 0; i < 4; i++)
+    {
+        cout << arr[i] << " ";
+    }
     //  method 4
-     int arr[4]={1,2,3,4};
-     cout<<arr[0];
-     cout<<arr[1];
-     cout<<arr[2];
-     cout<<arr[3];
-
-
+    int arr[4] = {1, 2, 3, 4};
+    cout << arr[0];
+    cout << arr[1];
+    cout << arr[2];
+    cout << arr[3];
 }
 // Array Operations
 /*
