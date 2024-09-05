@@ -8,6 +8,7 @@ int main()
     int arr[5] = {4, 6, 2, 8, 5};
     for (int i = n - 1; i >= 0; i--)
     {
+    bool iswapped=false;
         for (int j = 0; j < i; j++)
         {
             if (arr[j] > arr[j + 1])
@@ -15,8 +16,12 @@ int main()
                 int temp = arr[j];
                 arr[j] = arr[j + 1];
                 arr[j + 1] = temp;
+                iswapped=true;
             }
         }
+        if(!iswapped){
+        break;
+      }
     }
     for (int i = 0; i < n; i++)
     {
@@ -27,6 +32,7 @@ int main()
     int arr[5] = {4, 6, 2, 8, 5};
     for (int i = n - 1; i >= 0; i--)
     {
+        bool iswapped=false;
         for (int j = 0; j < i; j++)
         {
             if (arr[j] < arr[j + 1])
@@ -34,7 +40,12 @@ int main()
                 int temp = arr[j];
                 arr[j] = arr[j + 1];
                 arr[j + 1] = temp;
+                iswapped=true;
             }
+        }
+        if(! iswapped)
+        {
+            break;
         }
     }
     for (int i = 0; i < n; i++)
